@@ -1,0 +1,547 @@
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins'), url('../fonts/Poppins-Medium.woff2') format('woff2');
+  }
+
+
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+	flex:1;
+	min-height: 100vh;
+}
+
+
+
+
+
+header {
+	background-size: auto;
+	height: 100px;
+	background-color: #ff9959;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 1px -15px 30px;
+}
+
+#profile {
+	background-color: #0000004f;
+	border-radius: 10px;
+	padding:5px;
+	padding-left: 10px;
+    color: white;
+    text-align: end; /* Si tu veux aligner le texte à droite */
+    width: auto;
+    position: relative;
+    display: flex; /* Active le flexbox */
+	flex-direction: row-reverse;
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 10px; /* Ajoute un espacement entre le texte et l'icône (optionnel) */
+	right: 1%;
+}
+
+.profile {
+	align-items: center;
+}
+
+.profile a{
+	font-size:18px;
+	color: rgba(255, 255, 255, 0.655);
+	text-decoration: none;
+	transition: all 0.5s ease;
+	
+}
+
+
+
+.profile a:hover{
+	transition: all 0.2s ease;
+	color:white;
+}
+
+
+/*Paramètres de l'Icone du profil*/
+.profile_icone1,.profile_icone2,.profile_icone3,.profile_icone4 {
+	float: right;
+	height: 70px;
+	width: 70px;
+	background-size: cover;
+	-webkit-filter: drop-shadow(5px 5px 5px #222222b2);
+	filter: drop-shadow(5px 5px 5px #222222b2);
+}
+.profile_icone1{
+	background-image: url("../img/profile_1.png");
+}
+.profile_icone2{
+	background-image: url("../img/profile_2.png");
+}
+.profile_icone3{
+	background-image: url("../img/profile_3.png");
+}
+.profile_icone4{
+	background-image: url("../img/profile_4.png");
+}
+
+
+
+#logoEtInti{
+	display: flex;
+	left: 1%;
+	gap: 20px;
+	align-items: center;
+	position: relative;
+}
+
+
+.logo {
+	background-image: url("../img/MDLL.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	left: 1%;
+	width: 85px;
+	height: 85px;
+	background-size: contain;
+}
+
+	.logo img {
+		left:1%;
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+	}
+
+	.logo:hover {
+		cursor: pointer;
+	}
+
+
+.Inti{
+	Color:white;
+	height: auto;
+	font-size: 32px;
+}
+
+
+
+
+
+
+/*#menu {
+	background-color: #faf6f5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 100%;
+	width: 15%;
+	margin-top: 90px;
+	position: fixed;
+	overflow-y: auto;
+	left: 0;
+	box-shadow: 1px 0px 30px;
+}
+
+.under-menu {
+	padding-top:5%;
+	padding-left:5%;
+	color: black;
+	font-size: 150%;
+	transition: font-size 0.5s ease;
+
+	width: 90%;
+	color:dimgray;
+}
+
+	.under-menu a{
+			transition: font-size 0.1s ease;
+
+	}
+	.under-menu a:hover {
+		border-radius: 5px;
+		font-size: 120%;
+	}
+
+.under-menu-plus {
+	padding-left: 15%;
+	font-size: 28px;
+}
+
+.under-menu-plus-plus {
+	padding-left: 15%;
+	font-size: 24px;
+}
+
+#menu a {
+	color: black;
+	font-style:normal;
+	text-decoration: none;
+}*/
+
+
+
+main{
+	
+		flex: 1; /* Le contenu principal prendra tout l'espace restant */
+		margin-top: 90px;
+
+		padding: 50px 20% 50px 20%;
+		background:  no-repeat rgba(0, 0, 0, 0.08);
+		background-size: contain;
+
+
+		line-height: 1.5;
+		font-size: 22px;
+
+	
+}
+
+	.promo-banner {
+	height: 520px;
+
+
+}
+
+.promo-banner h2 {
+	font-weight: bold;
+}
+	.promo-banner p {
+		position: relative;
+		left: 1%;
+		color: #333436;
+	}
+
+.promo-banner img{
+	width: 800px;
+    height: 400px;
+    display: block; 
+    margin-right: 10px;
+    border-radius: 10px;
+    float: left;
+}
+
+.infosimages {
+
+}
+	.infosimages img {
+		border-radius:10px;
+	}
+
+h3 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	font-size: 150%;
+}
+
+
+
+#fournis {
+	display: flex;
+	justify-content: center; 
+	gap: 30px;
+	margin: 0 auto; 
+	width: fit-content;
+}
+
+.fournisseurs {
+	height: 200px;
+	width: 200px;
+	margin-top: 10px;
+	margin-bottom:10px;
+	background-color: white;
+	border-radius: 10px;
+}
+	.fournisseurs img {
+		height: 200px;
+		width: 200px;
+	}
+
+
+#contact{
+	text-align: center;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+	.contact img {
+		height: 100px;
+		width: 100px;
+	}
+
+
+
+	.contact a {
+		color: gray;
+		font-size: 140%;
+		text-decoration: none;
+		margin-bottom: 50px;
+		border-radius: 10px;
+		transition: background-color 0.5s ease;
+	}
+
+		.contact a:hover {
+			transition: background-color 0.5s ease;
+			background-color: #c49a78;
+			border-radius: 10px;
+		}
+
+p{
+	text-align: justify;
+}
+
+
+#vignettesAccueil {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin: 0 auto;	
+}
+
+.vignetteAccueil {
+	height: 400px;
+	width: 400px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	transition: box-shadow 0.7s ease, transform 0.2s;
+	color: dimgrey;
+	text-decoration: none;
+	transition: transform 0.3s ease;
+}
+
+	.vignetteAccueil img {
+		height: 250px;
+		width: 400px;
+		border-radius:10px 10px 0px 0px;
+	}
+	#vignettesAccueil a {
+		transition: color 0.3s ease;
+		color: dimgrey;
+		text-decoration: none;
+	}
+
+
+	.vignetteAccueil a {
+		transition: color 0.3s ease;
+		color: dimgrey;
+		text-decoration: none;
+	}
+	.vignetteAccueil:hover {
+		transition: none 0.5s ease;
+		transform: translateY(-20px);
+		filter: brightness(1.05);
+		box-shadow: rgba(0, 0, 0, 0.304) 0px 15px 10px;
+		transition: box-shadow 0.7s ease, transform 0.2s;
+	}
+	.vignetteAccueil a:hover {
+		transition: color 0.5s ease;
+		color: black;
+		text-decoration: none;
+
+	}
+
+.oos{
+
+}
+
+#Titre{
+	font-size:40px;
+}
+#Titre2{
+	font-size: 34px;
+}
+
+#Titre3{
+	position: relative;
+	font-size:28px;
+}
+
+input{
+	font-family: 'Century Gothic';
+	border-radius: 5px;
+	font-size:22px;
+	box-shadow: none;
+}
+
+input[type="checkbox"]{
+	width: 30px;
+	height: 30px;
+}
+
+textarea{
+	font-family: 'Century Gothic';
+	border-radius: 7px;
+	font-size:22px;
+}
+
+
+
+
+footer {
+	clear: left;
+	background: url("../img/pills_fond.png") #232426;
+	text-align: center;
+	height: auto;
+	bottom: 0px;
+	width: 100%;
+	flex-shrink: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* Positionnement absolu pour le footer */
+	bottom: 0;
+	z-index: 2;
+	background-size: 10%;
+	font-size: 16px;
+	color: grey;
+}
+
+
+	footer a {
+		padding-top: 10px;
+		color: white;
+		font-style: normal;
+		text-decoration: none;
+	}
+
+#maintenance {
+	height: 330px;
+	width: 520px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	margin: 0 auto;
+}
+.maintenance {
+	height: 330px;
+	width: 520px;
+}
+
+.maintenance img {
+	height: 330px;
+	width: 520px;
+	border-radius: 10px;
+}
+
+
+#imageProduit img{
+	border-radius: 30px;
+}
+
+h5 {
+	font-size: 28px;
+	font-style: bold;
+}
+
+select {
+	font-family: 'Century Gothic';
+	font-size:22px;
+	border-radius:5px;
+}
+
+select option[value="1"] {
+	background: grey;
+	color: white;
+	font-style: italic;
+	font-size: 24px;
+  }
+
+  select option[value="2"] {
+	font-size: 12px;
+	background-color: white;
+  }
+
+
+button{
+	font-family: 'Century Gothic';
+	border-radius: 10px;
+	font-size:28px;
+	background-color: #DADADA;
+	border: none;
+	padding: 5px 15px 5px 15px;
+	box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+	transition: border-radius 0.5s ease, color 0.5s ease, background-color 0.3s ease;
+
+}
+
+button:hover{
+	color: white;
+	background-color: #3D3D3D;
+	border-radius:40px;
+
+	transition: border-radius 0.5s ease, color 0.5s ease, background-color 0.3s ease;
+}
+
+::selection{
+	background-color: #182C44;
+	color: #90AFD5;
+}
+
+table {
+
+  }
+
+th{
+	text-align: end;
+  }
+
+.hidden{
+	visibility: hidden;
+}
+
+.form small{
+	visibility: hidden;
+}
+
+.form.error small{
+	padding:10px;
+	box-sizing: border-box;
+	font-size:18px;
+	width: 100%;
+	visibility: visible;
+	
+}
+
+
+#presentation{
+	display: flex;
+	width: 100%; /* Assure que le conteneur prend tout l'espace horizontal */
+	--gap:30px;
+	gap:var(--gap);
+	margin-top: 30px;
+	margin-bottom: 30px;;
+}
+
+	.textePresentation{
+		flex: 0 0 calc(65% - var(--gap)); /* Prend 30% de la largeur */
+		text-align: justify;
+		color: rgb(58, 58, 58);
+	}
+
+	.imgPresentation{
+		flex : 0 0 35%;
+		height: auto;
+		
+	}
+	.imgPresentation img{
+		border-radius: 20px;
+		width: 100%;
+		
+	}
+

@@ -1,0 +1,269 @@
+@font-face {
+	font-family: 'Poppins';
+	src: local('Poppins'), url('../fonts/Poppins-Medium.woff2') format('woff2');
+  }
+
+
+::selection{
+	background-color: #182C44;
+	color: #90AFD5;
+}
+
+
+body {
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le corps occupe la hauteur totale de la fenêtre */
+    margin: 0; /* Supprime les marges pour éviter les décalages */
+    background: url("../img/fond_main.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    min-height: 100vh; /* Assure que le corps de la page prend toujours la hauteur de la fenêtre */
+    line-height: 1.2;
+}
+
+
+
+main {
+	flex: 1; /* Le contenu principal prendra tout l'espace disponible */
+	width: 100%;
+	height: 10%;
+	display: flex;
+    flex-direction: column;
+    margin: 0; /* Supprime les marges pour éviter les décalages */
+    background: url("../img/fond_main.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+@keyframes infiniteScrollBg {
+	0% {
+	  transform: translateY(0%);
+	}
+	100%{
+	  transform: translateY(-100%);
+	}
+  }
+
+/*Affichage du menu de login*/
+
+.logo {
+	z-index: 3;
+	position: absolute;
+	width: 200px;
+	height: 90px;
+	background-size: contain;
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+
+		.logo img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			height: auto;
+			position:absolute;
+			top: -100px;
+		}
+
+		.logo:hover {
+			cursor: grab;
+		}
+
+	#pageVioletFond {
+		top:75px;
+		z-index: 1;
+		position: absolute;
+		background-color: #ff9959;
+		border-radius: 20px;
+		justify-content: center;
+		height: 400px;
+		width: 430px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+
+	#pageBlanche {
+		user-select: none;
+		display:block;
+		top:75px;
+		z-index:2;
+		margin-top: 45px;
+		position: absolute;
+		background-color: white;
+		border-radius: 20px;
+		justify-content: center;
+		height: 630px;
+		width: 430px;
+		box-shadow: 1px 0px 30px;
+			
+			left: 50%;
+			transform: translateX(-50%);
+
+	}
+
+	#pageBlancheContainer{
+		padding:20px;
+	}
+
+	i{
+		font-size: 42px;
+		padding: 5px;
+	}
+
+	.form small{
+		visibility: hidden;
+	}
+
+	.form.error small{
+		margin-top: 50px;
+		padding:10px;
+		font-size:18px;
+		width: 100%;
+		visibility: visible;
+		color: rgb(84, 84, 84);
+		
+	}
+
+
+
+	#pageBlanche * {
+	}
+
+
+
+.pageBlancheConnexion {
+	font-size: 30px;
+	font-weight: 500;
+	padding-top: 70px;
+}
+
+
+h3 {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	font-size: 150%;
+}
+
+p{
+	text-align: center;
+}
+
+input[type="text"]{
+	font-family: 'Poppins';
+	border-radius: 10px;
+	font-size:28px;
+	
+	background-color: #DADADA; 
+	border: none;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 5%;
+	width: 100%; /* Fait en sorte que l'input occupe toute la largeur disponible */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+	transition: background-color 0.3s;
+
+}
+	input[type="text"]:focus{
+		outline: none;
+		background-color: #B5B5B5;
+		transition: background-color 0.5s;
+	}
+
+
+input[type="password"]{
+	font-family: 'Poppins';
+	border-radius: 10px;
+	font-size:28px;
+	
+	background-color: #DADADA;
+	border: none;
+	padding: 5px 10px 5px 10px;
+	width: 100%; /* Fait en sorte que l'input occupe toute la largeur disponible */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+	transition: background-color 0.3s;
+}
+	input[type="password"]:focus{
+		outline: none;
+		background-color: #B5B5B5;
+		transition: background-color 0.5s;
+	}
+
+.button{
+	font-family: 'Poppins';
+	border-radius: 10px;
+	font-size:28px;
+	background-color: #DADADA;
+	border: none;
+	padding: 5px 15px 5px 15px;
+	margin-top: 1%;
+	box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur */
+	transition: border-radius 0.5s ease, color 0.5s ease, background-color 0.3s ease;
+
+}
+
+.button:hover{
+	color: white;
+	background-color: #3D3D3D;
+	border-radius:40px;
+
+	transition: border-radius 0.5s ease, color 0.5s ease, background-color 0.3s ease;
+}
+
+
+.form-control.error input{
+	background-color: #F5203E;
+}
+
+
+
+
+footer {
+	clear: left;
+	background: url("../img/pills_fond.png") #232426;
+	text-align: center;
+	height: auto;
+	bottom: 0px;
+	width: 100%;
+	flex-shrink: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* Positionnement absolu pour le footer */
+	bottom: 0;
+	z-index: 2;
+	background-size: 15%;
+	font-size: 16px;
+	color: grey;
+	position: fixed;
+}
+
+
+	footer a {
+		padding-top: 10px;
+		color: white;
+		font-style: normal;
+		text-decoration: none;
+	}
+
+
+#imageProduit img{
+	border-radius: 30px;
+}
+
+h5 {
+	font-size: 28px;
+	font-style: bold;
+}
+
+
+#form{
+	color:#313131;
+	font-size: 24px;
+}
